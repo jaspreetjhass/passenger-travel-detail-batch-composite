@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: passenger-travel-detail-batch-composite
+  profiles:
+    active:
+    - ${ACTIVE_PROFILE}
+  cloud:
+    config:
+      uri:
+      - ${CONFIG_SERVER_URL}
+      
+server:  port: ${SERVER_PORT}
